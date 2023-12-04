@@ -10,15 +10,20 @@
     <link rel="stylesheet" href="cover.css">
     <title>CSL 2024</title>
 <style>
-  #speaker-img {
-    float: left;
+  .speaker-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Aggiunge spazio tra le immagini */
+  }
+  .speaker-img {
     width: 100px;
     height: 100px;
     margin-right: 10px;
     border: 5px solid #555; /* Aggiunge una cornice all'immagine */
   }
-  .title {
-    display: block; /* Fa sì che l'università venga visualizzata sotto il nome */
+  .speaker-info {
+    display: flex;
+    flex-direction: column;
   }
 </style>
 </head>
@@ -254,45 +259,66 @@
 &nbsp;<br>
 <h2 align="center">Invited Speakers</h2>
 <ul>
-	<li> 
-	<a href="https://staff.fnwi.uva.nl/b.d.tencate/">
-	<img class="speaker-img" src="balter.jpg" alt="Balder ten Cate" width="100" height="100">
-	Balder ten Cate
-	</a>
-	<span class="title">University of Amsterdam</span>
-	</li>
+  <li>
+    <div class="speaker-container">
+      <a href="https://staff.fnwi.uva.nl/b.d.tencate/">
+        <img class="speaker-img" src="balter.jpg" alt="Balder ten Cate" width="100" height="100">
+      </a>
+      <div class="speaker-info">
+        <span>Balder ten Cate</span>
+        <span class="title">University of Amsterdam</span>
+      </div>
+    </div>
+  </li>
 
-	<li> 
-	<a href="https://www.cs.ox.ac.uk/people/georg.gottlob/">
-	<img class="speaker-img" src="George.jpg" alt="Georg Gotlob" width="100" height="100">
-	Georg Gotlob
-	</a>
-	<span class="title">University of Oxford</span>
-	</li>
+  <li>
+    <div class="speaker-container">
+      <a href="https://www.cs.ox.ac.uk/people/georg.gottlob/">
+        <img class="speaker-img" src="George.jpg" alt="Georg Gotlob" width="100" height="100">
+      </a>
+      <div class="speaker-info">
+        <span>Georg Gotlob</span>
+        <span class="title">University of Oxford</span>
+      </div>
+    </div>
+  </li>
 
-	<li> 
-	<a href="https://www.irif.fr/~greta/author/barbara-konig/">
-	<img class="speaker-img" src="Barbara.jpg" alt="Barbara König" width="100" height="100">
-	Barbara König
-	</a>
-	<span class="title">Universität Duisburg-Essen</span>
-	</li>
+  <li>
+    <div class="speaker-container">
+      <a href="https://www.irif.fr/~greta/author/barbara-konig/">
+        <img class="speaker-img" src="Barbara.jpg" alt="Barbara König" width="100" height="100">
+      </a>
+      <div class="speaker-info">
+        <span>Barbara König</span>
+        <span class="title">Universität Duisburg-Essen</span>
+      </div>
+    </div>
+  </li>
 
-	<li> 
-	<a href="https://www.cs.ox.ac.uk/people/marta.kwiatkowska/">
-	<img class="speaker-img" src="marta.jpg" alt="Marta Kwiatkowska" width="100" height="100">
-	Marta Kwiatkowska
-	</a>
-	<span class="title">University of Oxford</span>
-	</li>
+  <li>
+    <div class="speaker-container">
+      <a href="https://www.cs.ox.ac.uk/people/marta.kwiatkowska/">
+        <img class="speaker-img" src="marta.jpg" alt="Marta Kwiatkowska" width="100" height="100">
+      </a>
+      <div class="speaker-info">
+        <span>Marta Kwiatkowska</span>
+        <span class="title">University of Oxford</span>
+      </div>
+    </div>
+  </li>
 
-	<li> 
-	<a href="https://www.cs.rice.edu/~vardi/">
-	<img class="speaker-img" src="Vardi.jpg" alt="Moshe Y. Vardi" width="100" height="100">
-	Moshe Y. Vardi
-	</a>
-	<span class="title">Rice University</span>
-	</li>
+  <li>
+    <div class="speaker-container">
+      <a href="https://www.cs.rice.edu/~vardi/">
+        <img class="speaker-img" src="Vardi.jpg" alt="Moshe Y. Vardi" width="100" height="100">
+      </a>
+      <div class="speaker-info">
+        <span>Moshe Y. Vardi</span>
+        <span class="title">Rice University</span>
+      </div>
+    </div>
+  </li>
+
 </ul>
 	
 <div id="accepted papers" class="container">
