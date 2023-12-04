@@ -10,10 +10,15 @@
     <link rel="stylesheet" href="cover.css">
     <title>CSL 2024</title>
 <style>
-  .speaker-img {
+  #speaker-img {
+    float: left;
     width: 100px;
     height: 100px;
-    margin-bottom: 10px;
+    margin-right: 10px;
+    border: 5px solid #555; /* Aggiunge una cornice all'immagine */
+  }
+  .title {
+    display: block; /* Fa sì che l'università venga visualizzata sotto il nome */
   }
 </style>
 </head>
@@ -251,7 +256,7 @@
 <ul>
 	<li> 
 	<a href="https://staff.fnwi.uva.nl/b.d.tencate/">
-	<img id="speaker-img" src="balter.jpg" alt="Balder ten Cate" width="100" height="100">
+	<img class="speaker-img" src="balter.jpg" alt="Balder ten Cate" width="100" height="100">
 	Balder ten Cate
 	</a>
 	<span class="title">University of Amsterdam</span>
@@ -259,7 +264,7 @@
 
 	<li> 
 	<a href="https://www.cs.ox.ac.uk/people/georg.gottlob/">
-	<img id="speaker-img" src="George.jpg" alt="Georg Gotlob" width="100" height="100">
+	<img class="speaker-img" src="George.jpg" alt="Georg Gotlob" width="100" height="100">
 	Georg Gotlob
 	</a>
 	<span class="title">University of Oxford</span>
@@ -267,7 +272,7 @@
 
 	<li> 
 	<a href="https://www.irif.fr/~greta/author/barbara-konig/">
-	<img id="speaker-img" src="Barbara.jpg" alt="Barbara König" width="100" height="100">
+	<img class="speaker-img" src="Barbara.jpg" alt="Barbara König" width="100" height="100">
 	Barbara König
 	</a>
 	<span class="title">Universität Duisburg-Essen</span>
@@ -275,7 +280,7 @@
 
 	<li> 
 	<a href="https://www.cs.ox.ac.uk/people/marta.kwiatkowska/">
-	<img id="speaker-img" src="marta.jpg" alt="Marta Kwiatkowska" width="100" height="100">
+	<img class="speaker-img" src="marta.jpg" alt="Marta Kwiatkowska" width="100" height="100">
 	Marta Kwiatkowska
 	</a>
 	<span class="title">University of Oxford</span>
@@ -283,7 +288,7 @@
 
 	<li> 
 	<a href="https://www.cs.rice.edu/~vardi/">
-	<img id="speaker-img" src="Vardi.jpg" alt="Moshe Y. Vardi" width="100" height="100">
+	<img class="speaker-img" src="Vardi.jpg" alt="Moshe Y. Vardi" width="100" height="100">
 	Moshe Y. Vardi
 	</a>
 	<span class="title">Rice University</span>
