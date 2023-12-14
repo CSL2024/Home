@@ -25,6 +25,18 @@
     display: flex;
     flex-direction: column;
   }
+.toggle-content {
+  display: none;
+  padding: 10px;
+}
+
+.toggle-header {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
 </style>
 </head>
 <body>
@@ -376,14 +388,13 @@
 <li>	<b>	Tom van Dijk, Georg Loho and Matthew Maat.	</b>	<span class="title">	The worst-case complexity of symmetric strategy improvement	</span>	</li>
 
 </ul>
-
-
-</div>
 <div id="committee" class="container">
-    <h2 align="center">Committee</h2>
+  <h2 align="center">Committee</h2>
 
-    <details>
-        <summary><h4 class="sub_class">Chairs</h4></summary>
+  <div class="toggle-header" onclick="toggleContent(this)">
+    <h4 class="sub_class">Chairs</h4>
+  </div>
+  <div class="toggle-content">
         <ul>
             <li>
                 <h6>Aniello Murano <span class="university">(University of Naples Federico II)</span></h6>
@@ -392,11 +403,13 @@
                 <h6>Alexandra Silva <span class="university">(Cornell University)</span></h6>
             </li>
         </ul>
-    </details>
+  </div>
 
-    <details>
-        <summary><h4 class="sub_class">Program Committee</h4></summary>
-    <ul>
+  <div class="toggle-header" onclick="toggleContent(this)">
+    <h4 class="sub_class">Program Committee</h4>
+  </div>
+  <div class="toggle-content">
+     <ul>
 	<li>	Shaull	Almagor	<span class="university">(Technion)</span>	</li>	
 	<li>	Christel Baier	<span class="university">(TU Dresden)</span>	</li>
 	<li>	Filippo	Bonchi	<span class="university">(University of Pisa)</span>	</li>	    
@@ -431,9 +444,11 @@
 	<li>	Sam	van Gool <span class="university">(Université Paris Cité)</span>	</li>
 	<li>	Martin	Zimmermann <span class="university">(Aalborg University)</span>	</li>
     </ul>
-    </details>
-    <details>
-        <summary><h4 class="sub_class">Main Organizers</h4></summary>
+  </div>
+  <div class="toggle-header" onclick="toggleContent(this)">
+    <h4 class="sub_class">Main Organizers</h4>
+  </div>
+  <div class="toggle-content">
     <ul>
 	<li>	Marco Aruta		</li>	
 	<li>	Davide Catta	</li>
@@ -442,62 +457,9 @@
 	<li>	Munyque Mittelmann	</li>
 	<li>	Francesco Chiariello	</li>
     </ul>
-    </details>
+  </div>
 </div>
-<!--
-<div id="committee" class="container" >
-&nbsp;<br>
-&nbsp;<br>	
-    <h2 align="center">Committee</h2>
-    <h4 class="sub_class">Chairs</h4>
-    <ul>
-        <li>
-            <h6>Aniello Murano <span class="university">(University of Naples Federico II)</span></h6>
-        </li>
-        <li>
-            <h6>Alexandra Silva <span class="university">(Cornell University)</span></h6>
-        </li>
-    </ul>
 
-    </ul>
-    <h4 class="sub_class">Program Committee</h4>
-    <ul>
-<li>	Shaull	Almagor	<span class="university">(Technion)</span>	</li>	
-<li>	Christel Baier	<span class="university">(TU Dresden)</span>	</li>
-<li>	Filippo	Bonchi	<span class="university">(University of Pisa)</span>	</li>	    
-<li>	James	Brotherston	<span class="university">(University College London)</span>	</li>
-<li>	Valentina Castiglioni	(Reykjavik University)	</li>
-<li>	Taolue	Chen <span class="university">(Birkbeck, University of London)	</li>
-<li>	Diana	Costa <span class="university">(Universidade de Lisboa)</span>	</li>
-<li>	Silvia	Ghilezan <span class="university">(University of Novi Sad)</span>	</li>
-<li>	Nina	Gierasimczuk <span class="university">(Technical University of Denmark)</span>	</li>
-<li>	Wojtek	Jamroga <span class="university">(Polish Academy of Sciences)</span>	</li>
-<li>	Benjamin Lucien	Kaminski <span class="university">(Saarland University)</span>	</li>
-<li>	Tobias	Kappé <span class="university">(Open University of the Netherlands and ILLC, University of Amsterdam)</span>	</li>
-<li>	Shin-Ya	Katsumata <span class="university">(National Institute of Informatics)</span>	</li>
-<li>	Marie	Kerjean <span class="university">(CNRS, LIPN, Université Sorbonne Paris Nord)</span>	</li>
-<li>	Juha	Kontinen <span class="university">(University of Helsinki)</span>	</li>
-<li>	Clemens	Kupke <span class="university">(University of Strathclyde)</span>	</li>
-<li>	Martin	Lange <span class="university">(University of Kassel)</span>	</li>
-<li>	Carsten	Lutz <span class="university">(Universität Bremen)</span>	</li>
-<li>	Nicolas	Markey <span class="university">(IRISA, CNRS & INRIA & Univ. Rennes 1)</span>	</li>
-<li>	Larry	Moss <span class="university">(Indiana University Bloomington)</span>	</li>
-<li>	Pierre	Ohlmann <span class="university">(University of Warsaw)</span>	</li>
-<li>	Guillermo Perez <span class="university">(University of Antwerp)</span>	</li>
-<li>	Nir Piterman <span class="university">(Chalmers University of Technology)</span>	</li>
-<li>	Jurriaan Rot <span class="university">(Radboud University)</span> </li>
-<li>	Lutz 	Schröder <span class="university">(Friedrich-Alexander-Universität Erlangen-Nürnberg)</span>	</li>
-<li>	Sonja	Smets <span class="university">(University of Amsterdam)</span>	</li>
-<li>	Pawel	Sobocinski <span class="university">(Tallinn University of Technology)</span>	</li>
-<li>	Luca	Spada <span class="university">(Università di Salerno)</span>	</li>
-<li>	Sam	Staton <span class="university">(University of Oxford)</span>	</li>
-<li>	Christine Tasson <span class="university">(LIP6 - Sorbonne Université)</span>	</li>
-<li>	Andrea	Turrini <span class="university">(Institute of Software, Chinese Academy of Sciences)</span>	</li>
-<li>	Sam	van Gool <span class="university">(Université Paris Cité)</span>	</li>
-<li>	Martin	Zimmermann <span class="university">(Aalborg University)</span>	</li>
-</ul>
-</div>
--->
 
 	
 <div id="reach" class="container">
