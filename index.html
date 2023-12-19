@@ -15,22 +15,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>CSL 2024</title>
 <style>
-.navbar-toggler {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-toggler {
-    display: block;
-  }
-
-  .navbar-collapse {
-    display: none;
-  }
-
-  .navbar-collapse.show {
-    display: block;
-  }
   .speaker-container {
     display: flex;
     align-items: center;
@@ -66,6 +50,22 @@
 .nav-link {
     font-size: 14px; /* You can adjust the size as needed */
 }
+.navbar-toggler {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
 </style>
 </head>
 <body>
@@ -730,14 +730,6 @@ The following maps shows the Centro Congressi position: <br>
         <li>For each paper it is necessary to have an author registration.</li>
     </ol>
 </div>
-document.querySelector('.navbar-toggler').addEventListener('click', function() {
-  var navbarCollapse = document.querySelector('.navbar-collapse');
-  if (navbarCollapse.style.display === 'none' || navbarCollapse.style.display === '') {
-    navbarCollapse.style.display = 'block';
-  } else {
-    navbarCollapse.style.display = 'none';
-  }
-});
 </body>
 </html>
 
