@@ -19,11 +19,22 @@
     align-items: center;
     margin-bottom: 20px; /* Aggiunge spazio tra le immagini */
   }
+.speaker-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border: 5px solid #555;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min--moz-device-pixel-ratio: 2), 
+       only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi), 
+       only screen and (min-resolution: 2dppx) {
   .speaker-img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    border: 5px solid #555; /* Aggiunge una cornice all'immagine */
+    width: 200px; /* Doppia dimensione per display Retina */
+    height: 200px; /* Doppia dimensione per display Retina */
   }
   .speaker-info {
     display: flex;
