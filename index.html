@@ -729,7 +729,14 @@ The following maps shows the Centro Congressi position: <br>
         <li>For each paper it is necessary to have an author registration.</li>
     </ol>
 </div>
-
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  var navbarCollapse = document.querySelector('.navbar-collapse');
+  if (navbarCollapse.style.display === 'none' || navbarCollapse.style.display === '') {
+    navbarCollapse.style.display = 'block';
+  } else {
+    navbarCollapse.style.display = 'none';
+  }
+});
 </body>
 </html>
 
