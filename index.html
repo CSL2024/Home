@@ -48,7 +48,7 @@
   margin-bottom: 5px;
 }
 .nav-link {
-    font-size: 14px; /* You can adjust the size as needed */
+    font-size: 12px; /* You can adjust the size as needed */
 }
 .navbar-toggler {
   display: none;
@@ -763,14 +763,22 @@ The following maps shows the Centro Congressi position: <br><br>
     <br><br>
 </div>
     <script>
-    document.querySelector('.navbar-toggler').addEventListener('click', function() {
-      var navbarCollapse = document.querySelector('.navbar-collapse');
-      if (navbarCollapse.style.display === 'none' || navbarCollapse.style.display === '') {
-        navbarCollapse.style.display = 'block';
-      } else {
-        navbarCollapse.style.display = 'none';
-      }
-    });
+	document.querySelector('.navbar-toggler').addEventListener('click', function() {
+	  var navbarCollapse = document.querySelector('.navbar-collapse');
+	  if (navbarCollapse.style.display === 'none' || navbarCollapse.style.display === '') {
+	    navbarCollapse.style.display = 'block';
+	  } else {
+	    navbarCollapse.style.display = 'none';
+	  }
+	});
+	
+	var navbarLinks = document.querySelectorAll('.navbar-collapse a');
+	navbarLinks.forEach(function(navbarLink) {
+	  navbarLink.addEventListener('click', function() {
+	    var navbarCollapse = document.querySelector('.navbar-collapse');
+	    navbarCollapse.style.display = 'none';
+	  });
+	});
     </script>
 </body>
 </html>
