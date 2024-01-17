@@ -16,19 +16,19 @@
     <title>CSL 2024</title>
 <style>
   .contacts-container {
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    border-radius: 5px;
-    text-align: center;
-  }
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to right, blue, purple) 1;
+}
 
   .contacts-container a {
     color: black;
     text-decoration: underline;
   }
+
   .speaker-container {
     display: flex;
     align-items: center;
@@ -905,20 +905,18 @@ The following maps shows the Centro Congressi position: <br><br>
 	<br>
 	<br>
 	</div>
-	<div id="contacts" class="contacts-container">
+	<div id="contacts" class="container">
 	&nbsp;<br>
 	&nbsp;<br>	
  	<h2 align="center">Contacts</h2>
 	&nbsp;<br>
 	&nbsp;<br>
 	<p>For any information, please feel free to reach out to us using the contact information provided below. </p>
-	<br>
-	<ol>
-	        <li><a href="mailto:nello.murano@gmail.com">nello.murano@gmail.com</a></li>
-	        <li><a href="mailto:marco.aruta3@gmail.com">marco.aruta3@gmail.com</a></li>
-	</ol>
-	<br>
-	<br>
+	<div class="contacts-container">
+	  <ol>
+	    <li><a href="mailto:nello.murano@gmail.com">nello.murano@gmail.com</a></li>
+	    <li><a href="mailto:marco.aruta3@gmail.com">marco.aruta3@gmail.com</a></li>
+	  </ol>
 	</div>
 	</div>
 	<!--
