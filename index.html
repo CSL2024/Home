@@ -32,6 +32,22 @@
   .contacts-container ol {
     list-style-position: inside;
   }
+  @media only screen and (max-width: 600px) {
+    .contacts-container {
+      width: 90%;
+      border: 10px solid transparent;
+      border-image: none;
+    }
+
+    .contacts-container ol {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+
+    .contacts-container a {
+      text-decoration: none;
+    }
+  }
   .speaker-container {
     display: flex;
     align-items: center;
