@@ -60,9 +60,14 @@
   border: 5px solid #555;
 }
 @media only screen and (max-width: 600px) {
-  .speaker-img {
+  .speaker-img-container {
     width: 100px;
     height: 100px;
+    overflow: hidden;
+  }
+  .speaker-img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   .speaker-info {
