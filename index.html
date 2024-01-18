@@ -175,6 +175,34 @@
   width: 200px;
   height: 200px;
 }
+@media (max-width: 768px) {
+  .medal {
+    width: 100px; /* Adjusted width for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .sponsor-logo {
+    width: 120px; /* Adjusted width for mobile */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Reduced margin for mobile */
+  }
+
+  .gold, .silver, .bronze {
+    border-width: 3px; /* Thinner borders for mobile */
+    padding: 10px; /* Reduced padding for mobile */
+    margin-right: 10px; /* Reduced margin for mobile */
+    width: auto; /* Full width on mobile */
+  }
+
+  .sponsor-class {
+    flex-direction: column; /* Stack elements vertically on mobile */
+  }
+
+  .gold .sponsor-logos, .silver .sponsor-logos, .bronze .sponsor-logos {
+    flex-direction: row; /* Align logos horizontally within each category */
+    justify-content: space-between; /* Distribute space evenly between logos */
+  }
+}
 
 </style>
 </head>
