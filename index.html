@@ -198,10 +198,15 @@
     flex-direction: column; /* Stack elements vertically on mobile */
   }
 
-  .gold .sponsor-logos, .silver .sponsor-logos, .bronze .sponsor-logos {
+  .gold .sponsor-logos {
     flex-direction: row; /* Align logos horizontally within each category */
     justify-content: space-between; /* Distribute space evenly between logos */
   }
+.silver .sponsor-logos, .bronze .sponsor-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 </style>
