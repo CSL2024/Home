@@ -199,13 +199,20 @@
   }
 
   .gold .sponsor-logos {
-    flex-direction: row; /* Align logos horizontally within each category */
-    justify-content: space-between; /* Distribute space evenly between logos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 .silver .sponsor-logos, .bronze .sponsor-logos {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.gold .sponsor-logos img {
+  margin: 20px 0;
+}
+.bronze .sponsor-logos img {
+  margin: 20px 0;
 }
 }
 
