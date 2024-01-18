@@ -126,11 +126,15 @@
     display: none;
   }
 }
-.sponsor {
-  border-width: 5px;
-  border-style: solid;
-  padding: 10px;
-  margin: 10px;
+.sponsor-class {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gold, .silver, .bronze {
+  border: 5px solid;
+  padding: 20px;
+  text-align: center;
 }
 
 .gold {
@@ -142,7 +146,23 @@
 }
 
 .bronze {
-  border-color: #cd7f32; /* colore bronzo */
+  border-color: #cd7f32;
+}
+
+.medal {
+  width: 50px;
+  height: 50px;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsor-logo {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
 }
 </style>
 </head>
@@ -967,20 +987,28 @@ The following maps shows the Centro Congressi position: <br><br>
 	<br>
 	</div>
 	<div id="sponsor" class="container">
-	  <h2 align="center">Sponsors</h2>
-	  <div class="sponsor-container">
-	    <div class="sponsor gold">
-	      <img src="gold.png" alt="Gold Sponsor"><br><br>
-	      <!--<img src="gold.png" alt="Gold Sponsor">-->
-	      
+	  <h2 align="center">Sponsor</h2>
+	  <div class="sponsor-class">
+	    <div class="gold">
+	      <img src="medaglia_oro.jpg" class="medal">
+	      <div class="sponsor-logos">
+	        <img src="logo_sponsor1.jpg" class="sponsor-logo">
+	        <img src="logo_sponsor2.jpg" class="sponsor-logo">
+	      </div>
 	    </div>
-	    <div class="sponsor silver">
-	      <img src="silver.png" alt="Silver Sponsor"><br><br>
-	      <!--<img src="gold.png" alt="Gold Sponsor">-->
+	    <div class="silver">
+	      <img src="medaglia_argento.jpg" class="medal">
+	      <div class="sponsor-logos">
+	        <img src="logo_sponsor3.jpg" class="sponsor-logo">
+	        <img src="logo_sponsor4.jpg" class="sponsor-logo">
+	      </div>
 	    </div>
-	    <div class="sponsor bronze">
-	      <img src="bronze.png" alt="Bronze Sponsor"><br><br>
-	      <!--<img src="gold.png" alt="Gold Sponsor">-->
+	    <div class="bronze">
+	      <img src="medaglia_bronzo.jpg" class="medal">
+	      <div class="sponsor-logos">
+	        <img src="logo_sponsor5.jpg" class="sponsor-logo">
+	        <img src="logo_sponsor6.jpg" class="sponsor-logo">
+	      </div>
 	    </div>
 	  </div>
 	</div>
