@@ -237,7 +237,13 @@
   margin: 20px 0;
 }
 }
+.slide {
+    display: none;
+}
 
+.slide.active {
+    display: block;
+}
 </style>
 </head>
 <body>
@@ -1073,31 +1079,43 @@ The following maps shows the Centro Congressi position: <br><br>
 	&nbsp;<br>
 	&nbsp;<br>	
 	<h2 align="center">Social Dinner</h2><br>
-	<center><img id="chiostro" src="chiara2.png" class="img-fluid" align="center" alt="Antico Refettorio"></center>
-&nbsp;<br>
-&nbsp;<br>
+	<div id="slideshow" class="container">
+	    <center><div class="slide active">
+	    <img src="Chiara1.jpg" alt="Image 1">
+	    </div>
+	    <div class="slide">
+	        <img src="chiara2.png" alt="Image 2">
+	    </div>
+	    <div class="slide">
+	        <img src="chiara3.jpeg" alt="Image 3">
+	    </div>
+	    </center>
+	</div>
+	<!--<center><img id="chiostro" src="chiara2.png" class="img-fluid" align="center" alt="Antico Refettorio"></center>-->
+	&nbsp;<br>
+	&nbsp;<br>
+		
+	    <h4>  Antico Refettorio, Complesso Monumentale di Santa Chiara </h4> 
+		    
+	    <h4>    Via Santa Chiara, 49/c </h4>
 	
-    <h4>  Antico Refettorio, Complesso Monumentale di Santa Chiara </h4> 
-	    
-    <h4>    Via Santa Chiara, 49/c </h4>
-
-    <h4>    Naples		</h4>
-
- Complesso Monumentale di Santa Chiara is located at Via Santa Chiara, 49/c, in the heart of the city, near Piazza del Gesù. <br>                                                    
-<br>
-How to reach Antico Refettorio, Complesso Monumentale di Santa Chiara: <br>
-<ol>
-<li>From Airport: you can use taxis or take the Alibus line to the "Piazza Garibaldi" stop . Continue on foot to Garibaldi station (1 minute walking), take Metro Line 1 to Piscinola, get off at the Università stop and reach the social event venue (walking distance 8 minutes).<br>
-</li>
-<li>From Central Station (Piazza Garibaldi): you can use taxis or take the Metro Line 1 (Garibaldi, just outside the station) and get off at "Univerisità". From there it is possible to reach the Social Event venue with a pleasant walk (walking distance 8 minutes).<br>
-</li>
-</ol>
-
-The following maps shows the Antico Refettorio position: <br><br>
-
-<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48290.08298197665!2d14.211405024341385!3d40.84706544080132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b08445a3df2b7%3A0x3ddf5c133d3072f3!2sComplesso%20Monumentale%20di%20Santa%20Chiara!5e0!3m2!1sit!2sit!4v1705941910628!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+	    <h4>    Naples		</h4>
 	
-</div>
+	 Complesso Monumentale di Santa Chiara is located at Via Santa Chiara, 49/c, in the heart of the city, near Piazza del Gesù. <br>                                                    
+	<br>
+	How to reach Antico Refettorio, Complesso Monumentale di Santa Chiara: <br>
+	<ol>
+	<li>From Airport: you can use taxis or take the Alibus line to the "Piazza Garibaldi" stop . Continue on foot to Garibaldi station (1 minute walking), take Metro Line 1 to Piscinola, get off at the Università stop and reach the social event venue (walking distance 8 minutes).<br>
+	</li>
+	<li>From Central Station (Piazza Garibaldi): you can use taxis or take the Metro Line 1 (Garibaldi, just outside the station) and get off at "Univerisità". From there it is possible to reach the Social Event venue with a pleasant walk (walking distance 8 minutes).<br>
+	</li>
+	</ol>
+	
+	The following maps shows the Antico Refettorio position: <br><br>
+	
+	<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48290.08298197665!2d14.211405024341385!3d40.84706544080132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b08445a3df2b7%3A0x3ddf5c133d3072f3!2sComplesso%20Monumentale%20di%20Santa%20Chiara!5e0!3m2!1sit!2sit!4v1705941910628!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+		
+	</div>
 
 	<div id="sponsors" class="container">
 	&nbsp;<br>
@@ -1175,6 +1193,15 @@ The following maps shows the Antico Refettorio position: <br><br>
 	    navbarCollapse.style.display = 'none';
 	  });
 	});
+	let index = 0;
+	const slides = document.querySelectorAll('.slide');
+	
+	function slideshow() {
+	    slides[index].classList.remove('active');
+	    index = (index + 1) % slides.length;
+	    slides[index].classList.add('active');
+	}
+	setInterval(slideshow, 3000);
     </script>
 </body>
 </html>
