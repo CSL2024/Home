@@ -246,6 +246,12 @@ f<!doctype html>
 .slide.active {
     display: block;
 }
+@media (max-width: 768px) {
+  .csl-logo {
+    width: 100px; /* Adjusted width for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
 </style>
 </head>
 <body>
@@ -253,7 +259,7 @@ f<!doctype html>
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <!--<img src="unina.png" alt="Logo" style="width:60px;">-->
-            <img src="csl24.png" alt="logo" style="width:60px; margin-right: -1px;">
+            <img src="csl24.png" alt="logo" style="width:60px margin-right: -1px;">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -341,7 +347,7 @@ f<!doctype html>
 <h5> <b> 32nd EACSL Annual Conference on Computer Science Logic 2024 (CSL’24) </b></h5>
 <h4> 19-23 February 2024, Naples, Italy</h5>
 <br><br>
-<center><img id="csl24.png" src="csl24.png" class="img-fluid" align="center";"></center>
+<center><img id="csl24.png" class='csl-logo' src="csl24.png" align="center";"></center>
     &nbsp;<br> &nbsp;<br>
     
     <h2>About</h2>
