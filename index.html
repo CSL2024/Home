@@ -15,6 +15,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>CSL 2024</title>
 <style>
+
+
+    .container-article {
+        display: flex;
+        flex-direction: column; /* Imposta la direzione dei flex container su column */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .article-preview {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+        max-width: 600px;
+    }
+
+    .article-preview p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .article-preview img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
   @media screen and (max-width: 600px) {
     table {
       width: 100%;
@@ -399,14 +429,21 @@
 		<a href="https://twitter.com/CSL2024/status/1742937443681099859?ref_src=twsrc%5Etfw">January 4, 2024</a></blockquote> 
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-
-<div id="press" class="container">
-&nbsp;<br>
-&nbsp;<br>	 	 
-	
-    <h2 align="center">Press</h2>
-
-
+&nbsp;<br>&nbsp;<br>
+<div id="press" class="container-article">
+    <div class="article-preview">
+        <img src="ilMattinoArticolo.png" alt="Il Mattino">
+        <p>Arriveranno a Napoli i padri fondatori dell’informatica per l’evento Eacsl2024 (conferenza annuale dell’associazione europea per la logica informatica),</p>
+        <p>una delle conferenze più importanti al mondo, che si terrà dal 20 al 23 febbraio 2024, presso il centro congressi dell’ateneo dell’università degli studi di Napoli Federico II.</p>
+        <a href="https://www.ilmattino.it/napoli/cultura/napoli_federico_ii_eacsl_2024_informatica-7939066.html">Read More</a>
+    </div>
+    &nbsp;<br>&nbsp;<br>
+    <div class="article-preview">
+        <img src="AnsaArticolo.png" alt="Ansa">
+        <p>I guru dell'Informatica, leader indiscussi del panorama scientifico mondiale, saranno a Napoli per l'evento EACSL 2024,</p>
+        <p>la Conferenza annuale dell'Associazione Europea per la logica informatica che si terrà dal 20 al 23 febbraio 2024, presso il Centro Congressi dell'Ateneo dell'Università degli studi di Napoli, Federico II.</p>
+        <a href="https://www.ansa.it/campania/notizie/2024/02/16/i-guru-dellinformatica-mondiale-a-napoli-per-la-eacsl-2024_b1a7a8e4-ef0e-406a-b190-789a462d43a4.html">Read More</a>
+    </div>
 </div>
 
 <!--
@@ -441,7 +478,7 @@
 <div id="submission" class="container">
 &nbsp;<br>
 &nbsp;<br>
-&nbsp;<br>	
+&nbsp;<br>
 &nbsp;<br>
 	
 <h2 align="center">Submission guidelines</h2>
